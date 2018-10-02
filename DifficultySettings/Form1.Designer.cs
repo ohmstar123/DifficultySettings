@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.usernameLabel = new System.Windows.Forms.Label();
-            this.usernameTextbox = new System.Windows.Forms.TextBox();
+            this.usernameImput = new System.Windows.Forms.TextBox();
             this.levelLable = new System.Windows.Forms.Label();
             this.easyButton = new System.Windows.Forms.Button();
             this.mediumButton = new System.Windows.Forms.Button();
@@ -49,13 +49,13 @@
             this.usernameLabel.TabIndex = 0;
             this.usernameLabel.Text = "Enter Your Name Hero :";
             // 
-            // usernameTextbox
+            // usernameImput
             // 
-            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextbox.Location = new System.Drawing.Point(395, 83);
-            this.usernameTextbox.Name = "usernameTextbox";
-            this.usernameTextbox.Size = new System.Drawing.Size(148, 29);
-            this.usernameTextbox.TabIndex = 1;
+            this.usernameImput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameImput.Location = new System.Drawing.Point(395, 83);
+            this.usernameImput.Name = "usernameImput";
+            this.usernameImput.Size = new System.Drawing.Size(148, 29);
+            this.usernameImput.TabIndex = 1;
             // 
             // levelLable
             // 
@@ -70,6 +70,7 @@
             // 
             // easyButton
             // 
+            this.easyButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.easyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.easyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.easyButton.ForeColor = System.Drawing.SystemColors.Control;
@@ -79,9 +80,11 @@
             this.easyButton.TabIndex = 3;
             this.easyButton.Text = "Easy";
             this.easyButton.UseVisualStyleBackColor = true;
+            this.easyButton.Click += new System.EventHandler(this.easyButton_Click);
             // 
             // mediumButton
             // 
+            this.mediumButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.mediumButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mediumButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mediumButton.ForeColor = System.Drawing.SystemColors.Control;
@@ -94,6 +97,7 @@
             // 
             // hardButton
             // 
+            this.hardButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.hardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hardButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hardButton.ForeColor = System.Drawing.SystemColors.Control;
@@ -118,6 +122,7 @@
             // 
             // outputLabel
             // 
+            this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.outputLabel.Location = new System.Drawing.Point(87, 408);
             this.outputLabel.Name = "outputLabel";
@@ -136,7 +141,7 @@
             this.Controls.Add(this.mediumButton);
             this.Controls.Add(this.easyButton);
             this.Controls.Add(this.levelLable);
-            this.Controls.Add(this.usernameTextbox);
+            this.Controls.Add(this.usernameImput);
             this.Controls.Add(this.usernameLabel);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -148,7 +153,7 @@
         #endregion
 
         private System.Windows.Forms.Label usernameLabel;
-        private System.Windows.Forms.TextBox usernameTextbox;
+        private System.Windows.Forms.TextBox usernameImput;
         private System.Windows.Forms.Label levelLable;
         private System.Windows.Forms.Button easyButton;
         private System.Windows.Forms.Button mediumButton;

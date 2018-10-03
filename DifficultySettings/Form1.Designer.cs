@@ -70,6 +70,7 @@
             // 
             // easyButton
             // 
+            this.easyButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.easyButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.easyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.easyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,6 +95,7 @@
             this.mediumButton.TabIndex = 4;
             this.mediumButton.Text = "Medium";
             this.mediumButton.UseVisualStyleBackColor = true;
+            this.mediumButton.Click += new System.EventHandler(this.mediumButton_Click);
             // 
             // hardButton
             // 
@@ -107,6 +109,7 @@
             this.hardButton.TabIndex = 5;
             this.hardButton.Text = "Hard";
             this.hardButton.UseVisualStyleBackColor = true;
+            this.hardButton.Click += new System.EventHandler(this.hardButton_Click);
             // 
             // beginButton
             // 
@@ -119,15 +122,17 @@
             this.beginButton.TabIndex = 6;
             this.beginButton.Text = "Begin";
             this.beginButton.UseVisualStyleBackColor = true;
+            this.beginButton.Click += new System.EventHandler(this.beginButton_Click);
             // 
             // outputLabel
             // 
             this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.outputLabel.Location = new System.Drawing.Point(87, 408);
+            this.outputLabel.Location = new System.Drawing.Point(83, 377);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(645, 23);
+            this.outputLabel.Size = new System.Drawing.Size(645, 64);
             this.outputLabel.TabIndex = 7;
+            this.outputLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
